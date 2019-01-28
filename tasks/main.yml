@@ -11,8 +11,7 @@
     image: "atlassian/confluence-server:{{ confluence_docker_tag }}"
     state: started
     restart_policy: unless-stopped
-    published_ports:
-      - 8090:8090
-      - 8091:8091
+    networks: "{{ omit if confluence_docker_network == '' else confluence_docker_network }}"
+    published_ports: "{{ omit if confluence_docker_exposed_ports == '' else confluence_docker_exposed_ports }}"
     volumes:
       - "{{ confluence_docker_data_dir }}:/var/atlassian/application-data/confluence"

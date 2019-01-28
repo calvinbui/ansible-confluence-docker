@@ -1,4 +1,9 @@
 ---
 
 confluence_docker_tag: '6.14.0-ubuntu-18.04-adoptopenjdk8'
+confluence_docker_network: []
+confluence_docker_exposed_ports:
+  - 8090:8090
+  - 8091:8091
+  - 8443:8443
 confluence_docker_data_dir: /etc/confluence

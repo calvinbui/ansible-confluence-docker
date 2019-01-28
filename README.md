@@ -12,6 +12,10 @@ N/A
 
 `confluence_docker_tag`: Docker image tag to use found at https://hub.docker.com/r/atlassian/confluence-server/tags
 
+`confluence_docker_network`: Dictionary of Docker networks following https://docs.ansible.com/ansible/latest/modules/docker_container_module.html. Leave empty `[]` to not use it
+
+`confluence_docker_exposed_ports`: List of exposed ports. Leave empty `[]` to not use it
+
 `confluence_docker_data_dir`: Where to store data
 
 ## Dependencies
