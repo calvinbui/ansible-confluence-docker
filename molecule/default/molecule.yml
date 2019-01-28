@@ -16,6 +16,8 @@ provisioner:
     v: false
   lint:
     name: ansible-lint
+    options:
+      x: ["E204"]
 scenario:
   name: default
 verifier:
