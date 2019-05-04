@@ -9,8 +9,6 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - bionic
-        - xenial
-        - trusty
   galaxy_tags:
     - confluence
     - atlassian
